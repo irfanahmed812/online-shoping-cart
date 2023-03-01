@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="images/shopping.png" type="image/x-icon">
+    <title>Cart | Shoping.com</title>
+</head>
+
+<body class="bg-body-secondary">
+    <!-- nav bar -->
+
+    <header>
+        <div class="bg-dark" data-bs-theme="dark">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid logo">
+                        <a class="navbar-brand fs-2 fw-semibold" href="index.html"><img src="images/shopping.png"
+                                alt="">
+                            Shoping<span class="fs-5 dot-com">.com</span></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-house"></i>
+                                        Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fa-solid fa-headset"></i> Support</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fa-solid fa-user"></i> Account</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="index.html"><i
+                                            class="fa-sharp fa-solid fa-cart-shopping"></i>
+                                        Cart</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- cart start -->
+    <main>
+        <section class="container mb-2">
+            <!-- search -->
+            <div>
+                <form class="d-flex pb-3 pt-4" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search products" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+            <!-- heading -->
+            <div class="pb-5">
+                <h2>My Shoping Cart</h2>
+            </div>
+
+            <!-- shoping carts -->
+            <div class="card">
+                <div class="card-header text-center price">
+                    <h5>Total Carts</h5>
+                </div>
+
+
+                <!-- phone -->
+                <div class="card pt-5 bg-light bg-gradient">
+                    <!-- product 01 -->
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <center class="pt-3">
+                                <div class="product">
+                                    <img src="images/phone.png" class="card-img-top" alt="...">
+                                </div>
+                            </center>
+                        </div>
+                        <!-- product info -->
+                        <div class="col pt-3">
+                            <div>
+                                <div class="card-body">
+                                    <h5 class="card-title">iphone 14 Pro Max <span class="badge text-bg-primary">28%
+                                            off</span>
+                                    </h5>
+                                    <!-- star -->
+                                    <div class="star">
+                                        <span class="text-black">4.3</span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-regular fa-star"></i></span>
+                                        <span class="text-primary-emphasis">1.6k+</span>
+                                    </div>
+                                    <!-- old price to new price -->
+                                    <div class="pt-2">
+                                        <h3>$1299 <span
+                                                class="text-decoration-line-through fs-6 text-danger">$1599</span></h3>
+                                    </div>
+                                    <!-- color -->
+                                    <div class="pt-2">
+                                        <span>Color: </span>
+                                        <span class="text-danger"><i class="fa-solid fa-circle"></i></span>
+                                        <span class="text-black"><i class="fa-solid fa-circle"></i></span>
+                                        <span class="text-success"><i class="fa-solid fa-circle"></i></span>
+                                        <span class="text-info-emphasis"><i class="fa-solid fa-circle"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- input section -->
+                        <div class="col text-center">
+                            <div class="pb-5">
+                                <div class="pt-5 ">
+                                    <h4>Quantity</h4>
+                                </div>
+                                <div class="d-inline-flex mt-3">
+
+                                    <button class="form-control px-4 mx-4" id="phone-minus"><i
+                                            class="fa-solid fa-minus"></i></button>
+
+                                    <input class="form-control form-input text-center" type="number" name="" min="0"
+                                        id="phone-quantity" value="1">
+
+                                    <button class="form-control px-4 mx-4" id="phone-plus"><i
+                                            class="fa-solid fa-plus"></i></button>
+
+                                </div>
+                                <!-- carts quantity -->
+                                <div class="card-body mt-3">
+                                    <h5 class="card-title">$<span id="phone-price">1299</span></h5>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- span -->
+                <!-- <div class="span-color">
+                    <span></span>
+                </div>-->
+
+
+
+                <div class="card mt-2 bg-light bg-gradient">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <center>
+                                <div class="product pt-3">
+                                    <img src="images/case.png" class="card-img-top" alt="...">
+                                </div>
+                            </center>
+                        </div>
+                        <!-- product info -->
+                        <div class="col pt-3">
+                            <div>
+                                <div class="card-body">
+                                    <h5 class="card-title">iphone 14 Pro Max Case <span
+                                            class="badge text-bg-primary">53%
+                                            off</span>
+                                    </h5>
+                                    <!-- star -->
+                                    <div class="star">
+                                        <span class="text-black">3.5</span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star-half-stroke"></i></span>
+                                        <span><i class="fa-regular fa-star"></i></span>
+                                        <span class="text-primary-emphasis">3.03k+</span>
+                                    </div>
+                                    <!-- price -->
+                                    <div class="pt-2">
+                                        <h3>$99 <span class="text-decoration-line-through fs-6 text-danger">$199</span>
+                                        </h3>
+                                    </div>
+                                    <!-- color -->
+                                    <div class="pt-2">
+                                        <span>Color: </span>
+                                        <span class="text-danger"><i class="fa-solid fa-circle"></i></span>
+                                        <span class="text-black"><i class="fa-solid fa-circle"></i></span>
+                                        <span class="text-success"><i class="fa-solid fa-circle"></i></span>
+                                        <span class="text-info-emphasis"><i class="fa-solid fa-circle"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- input section -->
+                        <div class="col text-center">
+                            <div class="pb-5">
+                                <div class="pt-5 ">
+                                    <h4>Quantity</h4>
+                                </div>
+                                <div class="d-inline-flex mt-3">
+
+                                    <button class="form-control px-4 mx-4" id="case-minus"><i
+                                            class="fa-solid fa-minus"></i></button>
+
+                                    <input class="form-control form-input text-center" type="number" name="" min="0"
+                                        id="case-quantity" value="1">
+
+                                    <button class="form-control px-4 mx-4" id="case-plus"><i
+                                            class="fa-solid fa-plus"></i></button>
+
+                                </div>
+                                <!-- card quantity -->
+                                <div class="card-body mt-3">
+                                    <h5 class="card-title">$<span id="case-price">99</span></h5>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- macbook -->
+                <div class="card mt-2 bg-light bg-gradient">
+                    <!-- product 02 -->
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <center>
+                                <div class="product pt-3">
+                                    <img src="images/mac-01.png" class="card-img-top" alt="...">
+                                </div>
+                            </center>
+                        </div>
+                        <!-- product info -->
+                        <div class="col pt-3">
+                            <div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Mackbook Pro <span class="badge text-bg-primary">24%
+                                            off</span>
+                                    </h5>
+                                    <!-- star -->
+                                    <div class="star">
+                                        <span class="text-black">3.2 </span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-regular fa-star"></i></span>
+                                        <span><i class="fa-regular fa-star"></i></span>
+                                        <span class="text-primary-emphasis">1k+</span>
+                                    </div>
+                                    <!-- price -->
+                                    <div class="pt-2">
+                                        <h3>$1999 <span
+                                                class="text-decoration-line-through fs-6 text-danger">$2299</span></h3>
+                                    </div>
+                                    <!-- color -->
+                                    <div class="pt-2">
+                                        <span>Color: </span>
+                                        <span class="text-danger"><i class="fa-solid fa-circle"></i></span>
+                                        <span class="text-black"><i class="fa-solid fa-circle"></i></span>
+                                        <span class="text-success"><i class="fa-solid fa-circle"></i></span>
+                                        <span class="text-info"><i class="fa-solid fa-circle"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- input section -->
+                        <div class="col text-center">
+                            <div class="pb-5">
+                                <div class="pt-5 ">
+                                    <h4>Quantity</h4>
+                                </div>
+                                <div class="d-inline-flex mt-3">
+
+                                    <button class="form-control px-4 mx-4" id="mac-minus"><i
+                                            class="fa-solid fa-minus"></i></button>
+
+                                    <input class="form-control form-input text-center" type="number" name="" min="0"
+                                        id="mac-quantity" value="1">
+
+                                    <button class="form-control px-4 mx-4" id="mac-plus"><i
+                                            class="fa-solid fa-plus"></i></button>
+
+                                </div>
+                                <!-- card quantity -->
+                                <div class="card-body mt-3">
+                                    <h5 class="card-title">$<span id="mac-price">1999</span></h5>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- total span -->
+                <!-- <div class="total-span-color">
+                    <span></span>
+                </div>-->
+
+                <!-- subtotal -->
+                <div class="sub-total text-white pt-2 mt-3">
+                    <div class="row">
+
+                        <div class="col-md-8">
+                            <h5>Subtotal: </h5>
+                            <h5>Tax:</h5>
+                            <h5>Total:</h5>
+                        </div>
+
+                        <div class="col-md-4 sub-price">
+                            <h5>$<span id="total-sub">1278</span> </h5>
+                            <h5>$<span id="total-tax">1278</span> </h5>
+                            <h5>$<span id="total-price">1278</span></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- check out button -->
+                <div class="col-md-12 pt-4 pb-4 container">
+                    <button type="button" class="btn btn-success check-out" id="check-out">Check Out</button>
+                </div>
+
+        </section>
+    </main>
+
+
+    <!-- footer -->
+    <footer class="text-bg-dark">
+
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 footer-logo">
+                <a href="index.html"><img class="px-5 mx-4" src="images/shopping.png" alt=""></a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 text-center mt-3">
+                <h4>Payment Methood</h4>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="#">VISA</a></li>
+                        <li><a href="#">BKASH</a></li>
+                        <li><a href="#">NAGAD</a></li>
+                        <li><a href="#">ROCKET</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 text-center mt-3">
+                <h4>Our Patners</h4>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-amazon"></i> Amazon</a></li>
+                        <li><a href="#"><i class="fa-brands fa-microsoft"></i> Microsoft</a></li>
+                        <li><a href="#"><i class="fa-brands fa-paypal"></i> Paypal</a></li>
+                        <li><a href="#"><i class="fa-brands fa-apple-pay"></i> ApplePay</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-span">
+            <span></span>
+        </div>
+        <div class="text-center">
+            <p>Copyright &copy; 2023 - <span class="fw-bold"><a href="index.html"
+                        class="text-decoration-none text-light">Shoping<span class="text-danger">.com</span>
+                        |</span></a> Created
+                by <a href="https://www.facebook.com/irfanahmed812i" target="_blank"
+                    class="text-decoration-none text-primary fw-bold">Irfan
+                    Ahmed</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="https://kit.fontawesome.com/cf366aebbb.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

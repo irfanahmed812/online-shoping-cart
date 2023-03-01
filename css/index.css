@@ -1,0 +1,193 @@
+.logo img {
+    width: 76px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.dot-com {
+    color: #ff491f;
+}
+
+.navbar-nav {
+    --bs-nav-link-color: white;
+    --bs-nav-link-hover-color: #ff491f;
+    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: #ff491f;
+}
+
+.form-control {
+    width: 20%;
+}
+
+.d-flex {
+    display: flex !important;
+    justify-content: flex-end;
+}
+
+.btn-outline-success {
+    --bs-btn-color: black;
+    --bs-btn-border-color: #ff491f;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #ff491f;
+    --bs-btn-hover-border-color: #ff491f;
+    --bs-btn-focus-shadow-rgb: 25, 135, 84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #ff491f;
+    --bs-btn-active-border-color: #ff491f;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #ff491f;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #ff491f;
+    --bs-gradient: none;
+}
+
+.btn-color {
+    background-color: #ffdd4d !important;
+}
+
+.btn:hover {
+    background-color: #ff491f;
+    color: white;
+}
+
+/* card header */
+.card-header {
+    background-color: #ffdd4d;
+}
+
+.card:hover {
+    transition: all 0.4s ease;
+    box-shadow: rgba(99, 99, 99, 0.712) 0px 2px 8px 0px;
+}
+
+/* card */
+.price {
+    padding: 5px 72px 10px 4px;
+}
+
+/* produt image */
+.product img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+/* star info */
+
+.star {
+    color: #ffe159;
+}
+
+/* input pad */
+
+.form-input {
+    width: 28%;
+}
+
+/* span color */
+.span-color span {
+    width: 100%;
+    height: 1px;
+    background: #ff491f;
+    display: block;
+    margin: auto;
+    margin-top: 11px;
+    border-radius: 50px;
+}
+
+.total-span-color {
+    width: 100%;
+    height: 3px;
+    background: #24c461;
+    display: block;
+    margin: auto;
+    margin-top: 11px;
+    border-radius: 50px;
+}
+
+/* subtotal bg color */
+.sub-total {
+    background-color: rgb(231, 150, 57);
+    border-radius: 10px;
+}
+
+.sub-price {
+    text-align: right;
+}
+
+.sub-total h5 {
+    padding: 0 45px;
+}
+
+/* check out btn */
+.check-out {
+    float: right;
+    padding: 10px 30px;
+    font-size: 19px;
+    background-color: #2FBE70;
+    border: none;
+}
+
+/* footer */
+
+.row {
+    --bs-gutter-x: 0em;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+
+.footer-logo img {
+    width: 238px;
+    height: 195px;
+    object-fit: contain;
+}
+
+
+.footer-nav ul li {
+    list-style: none;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-nav ul li a:hover {
+    color: #ff491f;
+}
+
+.footer-span span {
+    width: 100%;
+    height: 1px;
+    background: gray;
+    display: block;
+    margin: auto;
+    margin-top: 11px;
+    border-radius: 50px;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 320px) {
+    /* .navbar-nav {
+        display: flex;
+    } */
+
+    .form-control {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+
+    .form-control {
+        width: 42%;
+    }
+}
